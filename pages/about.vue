@@ -1,33 +1,32 @@
 <template>
   <div>
-    <p>{{title}} Page</p>
+    <p>{{ title }} Page</p>
     <nuxt-link to="/">Home</nuxt-link>
   </div>
 </template>
 <script>
 export default {
   asyncData() {
-    return{
-      title:'About'
-    }
+    return {
+      title: "About",
+    };
   },
   head() {
-    return{
-      title:'about-page',
-      script:[
+    return {
+      title: "about-page",
+      script: [
         {
-          src:'/about.js'
-        }
+          src: "/about.js",
+        },
       ],
-      meta:[
+      meta: [
         {
-          hid:'description',
-          name:'description',
-          content:'this is about page'
-        }
-      ]
-    }
-
+          hid: "description",
+          name: "description",
+          content: "this is about page",
+        },
+      ],
+    };
   },
-}
+};
 </script>
